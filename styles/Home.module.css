@@ -1,19 +1,18 @@
 @media screen and (min-width: 576px) {
- .walletContentMobile {
-  display: none;
- }
- .walletContentDesktop {
-  display: block;
- }
- .walletTopNavMobile {
-  display: none;
- }
- .walletTopNavDesktop {
-  display: block;
-  margin: 0;
-  padding: 0;
- }
-
+  .walletContentMobile {
+    display: none;
+  }
+  .walletContentDesktop {
+    display: block;
+  }
+  .walletTopNavMobile {
+    display: none;
+  }
+  .walletTopNavDesktop {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 575px) {
   .walletContentMobile {

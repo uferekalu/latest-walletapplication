@@ -90,19 +90,19 @@ export default function Home() {
           <WalletContentMobile />
         </div>
         <div className={styles.walletContentDesktop}>
-          <WalletContentDesktop 
-          isHome={isHome}
-          setIsHome={setIsHome}
-          isTransactions={isTransactions}
-          setIsTransactions={setIsTransactions}
-          isContacts={isContacts}
-          setIsContacts={setIsContacts}
-          isProfile={isProfile}
-          setIsProfile={setIsProfile}
-          handleIsHome={handleIsHome}
-          handleIsTransactions={handleIsTransactions}
-          handleIsContacts={handleIsContacts}
-          handleIsProfile={handleIsProfile}
+          <WalletContentDesktop
+            isHome={isHome}
+            setIsHome={setIsHome}
+            isTransactions={isTransactions}
+            setIsTransactions={setIsTransactions}
+            isContacts={isContacts}
+            setIsContacts={setIsContacts}
+            isProfile={isProfile}
+            setIsProfile={setIsProfile}
+            handleIsHome={handleIsHome}
+            handleIsTransactions={handleIsTransactions}
+            handleIsContacts={handleIsContacts}
+            handleIsProfile={handleIsProfile}
           />
         </div>
       </WalletLayout>
