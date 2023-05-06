@@ -43,19 +43,19 @@ const WalletLayout: React.FC<Props> = ({
         }}
       >
         <WalletTopNav
-        isHome={isHome}
-        setIsHome={setIsHome}
-        isTransactions={isTransactions}
-        setIsTransactions={setIsTransactions}
-        isContacts={isContacts}
-        setIsContacts={setIsContacts}
-        isProfile={isProfile}
-        setIsProfile={setIsProfile}
-        handleIsHome={handleIsHome}
-        handleIsTransactions={handleIsTransactions}
-        handleIsContacts={handleIsContacts}
-        handleIsProfile={handleIsProfile}
-         />
+          isHome={isHome}
+          setIsHome={setIsHome}
+          isTransactions={isTransactions}
+          setIsTransactions={setIsTransactions}
+          isContacts={isContacts}
+          setIsContacts={setIsContacts}
+          isProfile={isProfile}
+          setIsProfile={setIsProfile}
+          handleIsHome={handleIsHome}
+          handleIsTransactions={handleIsTransactions}
+          handleIsContacts={handleIsContacts}
+          handleIsProfile={handleIsProfile}
+        />
         <div
           style={{
             display: 'flex',

@@ -73,35 +73,33 @@ const WalletContentDesktop: React.FC<Props> = ({
             isClicked={isHome}
           />
           <SidebarContent
-                imgSrc={
-                  isTransactions
-                    ? '/img/selected_transaction_icon.png'
-                    : '/img/transaction_icon.png'
-                }
-                caption="Transaction"
-                handleClick={handleIsTransactions}
-                isClicked={isTransactions}
-              />
-              <SidebarContent
-                imgSrc={
-                  isContacts
-                    ? '/img/selected_contacts_icon.png'
-                    : '/img/contacts_icon.png'
-                }
-                caption="Contacts"
-                handleClick={handleIsContacts}
-                isClicked={isContacts}
-              />
-              <SidebarContent
-                imgSrc={
-                  isProfile
-                    ? '/img/selected_user_icon.png'
-                    : '/img/user_icon.png'
-                }
-                caption="Profile"
-                handleClick={handleIsProfile}
-                isClicked={isProfile}
-              />
+            imgSrc={
+              isTransactions
+                ? '/img/selected_transaction_icon.png'
+                : '/img/transaction_icon.png'
+            }
+            caption="Transaction"
+            handleClick={handleIsTransactions}
+            isClicked={isTransactions}
+          />
+          <SidebarContent
+            imgSrc={
+              isContacts
+                ? '/img/selected_contacts_icon.png'
+                : '/img/contacts_icon.png'
+            }
+            caption="Contacts"
+            handleClick={handleIsContacts}
+            isClicked={isContacts}
+          />
+          <SidebarContent
+            imgSrc={
+              isProfile ? '/img/selected_user_icon.png' : '/img/user_icon.png'
+            }
+            caption="Profile"
+            handleClick={handleIsProfile}
+            isClicked={isProfile}
+          />
         </div>
         <div
           style={{
@@ -113,7 +111,7 @@ const WalletContentDesktop: React.FC<Props> = ({
             height: '150vh',
           }}
         >
-            the content
+          the content
         </div>
       </div>
     </>

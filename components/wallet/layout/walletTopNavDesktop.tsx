@@ -35,8 +35,8 @@ export default function WalletTopNavDesktop() {
               fontWeight: '500',
               border: 'none',
               width: '100px',
-              justifyContent:'center',
-              alignItems: "center"
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
             Register
