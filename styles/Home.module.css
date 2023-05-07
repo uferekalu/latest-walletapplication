@@ -1,3 +1,15 @@
+.getStartedDesktop {
+  background: no-repeat url('../public/img/background.png');
+  background-size: cover;
+}
+.signup {
+  background: no-repeat url('../public/img/signupbg.png');
+  /* background-size: cover; */
+}
+.link {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 576px) {
   .walletContentMobile {
     display: none;
@@ -12,6 +24,24 @@
     display: block;
     margin: 0;
     padding: 0;
+  }
+  .btnStyles {
+    width: 40%;
+  }
+  .getStarted {
+    width: '375px';
+  }
+  .getStartedDesktop {
+    height: 120vh;
+  }
+  .btnCreateAccount {
+    width: 60%;
+  }
+  .signup {
+    height: 120vh;
+  }
+  .link {
+    width: 60%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -44,5 +74,20 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
+  .btnStyles {
+    width: 100%;
+  }
+  .getStarted {
+    width: '100%';
+  }
+  .getStartedDesktop {
+    height: 130vh;
+  }
+  .btnCreateAccount {
+    width: 100%;
+  }
+  .link {
+    width: 100%;
   }
 }

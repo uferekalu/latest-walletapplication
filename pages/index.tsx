@@ -10,6 +10,9 @@ export default function Home() {
   const [isTransactions, setIsTransactions] = useState<boolean>(false);
   const [isContacts, setIsContacts] = useState<boolean>(false);
   const [isProfile, setIsProfile] = useState<boolean>(false);
+  const [getStarted, setGetStarted] = useState(false);
+  const [signUp, setSignUp] = useState(false);
+  const [login, setLogin] = useState(false);
 
   const handleIsHome = () => {
     setIsHome(true);
@@ -87,7 +90,14 @@ export default function Home() {
         handleIsProfile={handleIsProfile}
       >
         <div className={styles.walletContentMobile}>
-          <WalletContentMobile />
+          <WalletContentMobile
+            getStarted={getStarted}
+            setGetStarted={setGetStarted}
+            signUp={signUp}
+            setSignUp={setSignUp}
+            login={login}
+            setLogin={setLogin}
+          />
         </div>
         <div className={styles.walletContentDesktop}>
           <WalletContentDesktop
@@ -103,6 +113,12 @@ export default function Home() {
             handleIsTransactions={handleIsTransactions}
             handleIsContacts={handleIsContacts}
             handleIsProfile={handleIsProfile}
+            getStarted={getStarted}
+            setGetStarted={setGetStarted}
+            signUp={signUp}
+            setSignUp={setSignUp}
+            login={login}
+            setLogin={setLogin}
           />
         </div>
       </WalletLayout>

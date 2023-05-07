@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import React, { Dispatch, SetStateAction } from 'react';
 import SidebarContent from '../sidebarContent';
+import Welcome from '../welcome';
+import SignupComp from '../signupComp';
+import styles from '@/styles/Home.module.css';
+import LoginComp from '../loginComp';
 
 interface Props {
   isHome: boolean;
@@ -15,6 +19,12 @@ interface Props {
   handleIsTransactions: () => void;
   handleIsContacts: () => void;
   handleIsProfile: () => void;
+  getStarted: boolean;
+  setGetStarted: Dispatch<SetStateAction<boolean>>;
+  signUp: boolean;
+  setSignUp: Dispatch<SetStateAction<boolean>>;
+  login: boolean;
+  setLogin: Dispatch<SetStateAction<boolean>>;
 }
 
 const WalletContentDesktop: React.FC<Props> = ({
@@ -26,6 +36,12 @@ const WalletContentDesktop: React.FC<Props> = ({
   handleIsTransactions,
   handleIsContacts,
   handleIsProfile,
+  getStarted,
+  setGetStarted,
+  signUp,
+  setSignUp,
+  login,
+  setLogin,
 }) => {
   return (
     <>
@@ -101,18 +117,52 @@ const WalletContentDesktop: React.FC<Props> = ({
             isClicked={isProfile}
           />
         </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            width: '80%',
-            padding: '20px',
-            background: 'white',
-            height: '150vh',
-          }}
-        >
-          the content
-        </div>
+        {signUp ? (
+          <div
+            className={styles.signup}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '80%',
+              padding: '20px',
+              background: 'white',
+            }}
+          >
+            <SignupComp setSignUp={setSignUp} setLogin={setLogin} />
+          </div>
+        ) : login ? (
+          <div
+            className={styles.signup}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '80%',
+              padding: '20px',
+              background: 'white',
+            }}
+          >
+            <LoginComp setSignUp={setSignUp} setLogin={setLogin} />
+          </div>
+        ) : (
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '80%',
+              padding: '20px',
+              background: 'white',
+            }}
+          >
+            <Welcome
+              getStarted={getStarted}
+              setGetStarted={setGetStarted}
+              signUp={signUp}
+              setSignUp={setSignUp}
+              login={login}
+              setLogin={setLogin}
+            />
+          </div>
+        )}
       </div>
     </>
   );
